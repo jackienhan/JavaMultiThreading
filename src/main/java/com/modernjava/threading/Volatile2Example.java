@@ -4,8 +4,8 @@ public class Volatile2Example {
     private volatile static int COUNT = 0;
 
     public static void main(String[] args) {
-        new ChangeListener().start();
         new ChangeMaker().start();
+        new ChangeListener().start();
     }
 
     static class ChangeListener extends Thread {
